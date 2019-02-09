@@ -1,0 +1,163 @@
+/*Font*/
+
+@import url('https://fonts.googleapis.com/css?family=Cookie');
+
+/*Titre*/
+
+.Logo h1 {
+    font-family: 'Cookie', cursive;
+    font-size: 55px;
+    font-weight: 100;
+    margin-top: 150px;
+    padding-left: 50px;
+}
+
+/*Fond*/
+
+html {
+  height: 100%;
+}
+
+body {
+    margin: auto;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    position: relative;
+    min-height: 100%;
+}
+
+div.nom {
+    margin-left: 0px;
+}
+
+div.containerLogo {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-left: 10%;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    height: 50px;
+    padding-top: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+/*****************************************CARROUSEL*************************************************/
+
+/*Container*/
+
+.container {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-left: 100px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.albery-container,
+.pagination-container {
+    position: relative;
+    /* center it */
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    overflow: hidden;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.albery-wrapper {
+    position: relative;
+    height: auto;
+    width: 1600px;
+}
+
+.albery-item {
+    position: relative;
+    float: left;
+    width: 400px;
+    /*cursor: zoom-in;*/
+}
+
+.albery-item img {
+    width: 100%;
+}
+
+.move-left,
+.move-right {
+    position: absolute;
+    width: 18%;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.move-left a,
+.move-right a {
+    display: block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all .5s;
+    border-top: 34px solid transparent;
+    border-bottom: 34px solid transparent;
+    width: 0;
+    height: 0;
+}
+
+.move-left a:hover,
+.move-right a:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.move-left a {
+    border-right: 34px solid rgba(255, 255, 255, 0.5);
+}
+
+.move-right a {
+    border-left: 34px solid rgba(255, 255, 255, 0.5);
+}
+
+.move-left {
+    left: 0;
+}
+
+.move-right {
+    right: 0;
+}
+
+.pagination-wrapper {
+    position: relative;
+    height: auto;
+    width: 1600px;
+}
+
+.pagination-item {
+    position: relative;
+    float: left;
+    width: 144px;
+    margin-right: 13px;
+    cursor: pointer;
+}
+
+.pagination-item p {
+    text-align: center;
+    margin: 0px;
+}
+
+.pagination-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
